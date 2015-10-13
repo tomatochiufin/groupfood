@@ -1,0 +1,22 @@
+{
+  "name": "groupfood",
+  "version": "0.0.0",
+  "homepage": "https://github.com/tomatochiufin/groupfood",
+  "description": "",
+  "main": "",
+  "moduleType": [],
+  "authors": [
+    "stacy"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "material-design-lite": "~1.0.5"
+  }
+}

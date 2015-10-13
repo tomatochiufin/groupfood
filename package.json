@@ -1,0 +1,22 @@
+{
+  "name": "groupfood",
+  "version": "1.0.0",
+  "description": "## Install 'npm install' 'bower install' 'gulp default'",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomatochiufin/groupfood.git"
+  },
+  "author": "stacy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tomatochiufin/groupfood/issues"
+  },
+  "homepage": "https://github.com/tomatochiufin/groupfood#readme",
+  "devDependencies": {
+    "gulp": "^3.9.0"
+  }
+}
