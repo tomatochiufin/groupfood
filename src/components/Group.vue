@@ -1,5 +1,11 @@
 <template>
   <div>
+      Clicked: {{ $store.state.count }} times, count is
+      <button @click="increment">+</button>
+
+
+
+
     <h1>{{ msg }}</h1>
     <div v-for="group in groups">
       <h2>{{ group.restaurant }}</h2>
@@ -12,6 +18,9 @@
 </template>
 
 <script>
+import { mapGetters, mapActions } from 'vuex'
+
+
 export default{
   name: 'Group',
   data:()=>{
@@ -39,11 +48,12 @@ export default{
           ],
     }
   },
-  methods: {
-    test:function(){
-             console.log("hello world");
-           }
-  }
+  methods: mapActions([
+      'increment',
+      'decrement',
+      'incrementIfOdd',
+      'incrementAsync'
+  ])
 
 }
 
