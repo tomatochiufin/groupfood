@@ -1,11 +1,12 @@
 var path = require('path')
 var webpack = require('webpack')
+var CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
   entry: './src/main.js',
   output: {
-    path: path.resolve(__dirname, './dist'),
-    publicPath: '/dist/',
+    path: path.resolve(__dirname, './public'),
+    publicPath: '/public/',
     filename: 'build.js'
   },
   resolveLoader: {
@@ -47,6 +48,9 @@ if (process.env.NODE_ENV === 'production') {
         NODE_ENV: '"production"'
       }
     }),
+    new CopyWebpackPlugin([
+      { from: 'index.html', to: 'index.html' }
+    ]),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false
