@@ -1,18 +1,43 @@
 # groupfood
 
-> A Vue.js project
+> Vue.js + Firebase
 
-## Build Setup
+## Production
 
 ``` bash
 # install dependencies
 npm install
 
-# serve with hot reload at localhost:8080
+# product publish folder
+npm run build
+
+# https://groupfood-90bae.firebaseapp.com
+firebase deploy
+
+```
+
+## Development
+
+``` bash
+npm install
+
+npm run build
+
+firebase serve
+
+open http://localhost:5000
+
+```
+
+## Development - vue
+
+``` bash
+#index.html <script>改成 public/build.js
+npm install
+
 npm run dev
 
-# build for production with minification
-npm run build
+open http://localhost:8080
 ```
 
 For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).

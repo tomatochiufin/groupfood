@@ -49,7 +49,8 @@ if (process.env.NODE_ENV === 'production') {
       }
     }),
     new CopyWebpackPlugin([
-      { from: 'index.html', to: 'index.html' }
+      { from: 'index.html', to: 'index.html' },
+      { from: '404.html', to: '404.html' }
     ]),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
