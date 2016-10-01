@@ -14,6 +14,7 @@ import UnGroup from './components/UnGroup.vue'
 
 export default {
   components: {
+
     Month,
     Group,
     UnGroup

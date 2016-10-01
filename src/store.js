@@ -14,18 +14,24 @@ const state = {
     groups: [
         {
             restaurant: '添好運',
-            participant: [{name: 'stacy chen'}, {name: 'yingray lu'}, {name: 'pompom huang'}],
-            remain: 0
+            date:'2016/10/15 (五)',
+            participant: [{name: 'stacy chen', contact: true}, {name: 'yingray lu', contact: false}, {name: 'pompom huang', contact: false}],
+            remain: 0,
+            note: '報名即將截止，要搶要快！'
         },
         {
             restaurant: '點點心',
-            participant: [{name: 'liz cheng'}, {name: 'Gary Chung'}, {name: 'Amber ou'}],
-            remain: 1
+            date:'2016/10/20 (二)',
+            participant: [{name: 'liz cheng', contact: false}, {name: 'Gary Chung', contact: true}, {name: 'Amber ou', contact: false}],
+            remain: 1,
+            note: 'JAVAN 是我的！'
         },
         {
             restaurant: '花酒藏',
-            participant: [{name: 'Jerry Chen'}, {name: 'Nicky Chen'}, {name: 'Mike chen'}],
-            remain: 2
+            date:'2016/10/15 (五)',
+            participant: [{name: 'Jerry Chen', contact: true}, {name: 'Nicky Chen', contact: false}, {name: 'Mike chen', contact: false}],
+            remain: 2,
+            note: '美食在此，你還不來嗎'
         }
     ],
     ungroup: [

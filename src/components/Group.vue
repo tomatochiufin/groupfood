@@ -7,12 +7,15 @@
           <button @click="incrementAsync">Increment async</button>
 
 
-    <div v-for="group in $store.state.groups">
+    <div class="groupWrap" v-for="group in $store.state.groups">
       <h2>{{ group.restaurant }}</h2>
+      <p>{{ group.date }}</p>
       <ul>
-        <li v-for="person in group.participant">{{person.name}}</li>
+        <li v-for="person in group.participant">
+          <p :class = "{ contact: person.contact }">{{person.name}}</p>
+        </li>
       </ul>
-
+      <p>{{ group.note }}</p>
     </div>
   </div>
 </template>
@@ -36,3 +39,12 @@ export default{
 }
 
 </script>
+
+<style>
+.groupWrap{
+    background: pink;
+}
+.groupWrap .contact{
+  color: red;
+}
+</style>
