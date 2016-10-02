@@ -5,7 +5,6 @@
 ## Production
 
 ``` bash
-# install dependencies
 npm install
 
 # product publish folder

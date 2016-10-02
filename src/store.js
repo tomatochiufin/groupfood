@@ -77,7 +77,15 @@ const actions = {
                 resolve()
             }, 1000)
         })
+    },
+    signIn ({ commit }) {
+        console.log("signIn");
+        console.log(firebase);
+        var provider = new firebase.auth.GoogleAuthProvider();
+        firebase.auth().signInWithPopup(provider);
     }
+
+
 }
 
 // getters are functions
